@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/auth/head'); %>
+  </head>
+  <body>
+    <div class="form-container">
+      <!--Header Text-->
+      <%- include('../partials/auth/header', {text:"Log in"}); %>
+      <form>
+        <!--Email Input-->
+        <%- include('../partials/auth/input', {name: "userEmail", type: "email",
+        label: "Email"}); %>
+
+        <!--Password Input-->
+        <%- include('../partials/auth/input', {name: "userPassword", type:
+        "password", label: "Password"}); %>
+
+        <!--Submit button-->
+        <%- include('../partials/auth/button', {text: "Log in"}); %>
+      </form>
+      <p>If you don't have an account, Please <a href="/sign-in">Sign in</a></p>
+    </div>
+  </body>
+</html>
