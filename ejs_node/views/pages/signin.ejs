@@ -7,7 +7,9 @@
     <div class="form-container">
       <!--Header Text-->
       <%- include('../partials/auth/header', {text:"Sign in"}); %>
-      <form>
+
+      <!--enctype="application/x-www-form-urlencoded". This is the default-->
+      <form action="/sign-in" method="POST" >
         <!--UserName Input-->
         <%- include('../partials/auth/input', {name: "userName", type: "text",
         label: "UserName"}); %>
