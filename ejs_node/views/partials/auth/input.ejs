@@ -1,4 +1,12 @@
 <div>
-  <label for=<%= typeof name != "undefined" ? name: "text"  %> ><%= typeof label != "undefined" ? label: "Text"  %></label>
-  <input type=<%= typeof type != "undefined" ? type: "text"  %>  id=<%= typeof name != "undefined" ? name: "text"  %>  name=<%=  typeof name != "undefined" ? name: "userinput"%>  />
+  <label 
+    for=<%= typeof name != "undefined" ? name: "text"  %> >
+    <%= typeof label != "undefined" ? label: "Text"  %>
+  </label>
+  <input 
+    type=<%= typeof type != "undefined" ? type: "text"  %>  
+    id=<%= typeof name != "undefined" ? name: "text"  %>  
+    name=<%=  typeof name != "undefined" ? name: "userinput"%>
+    value=<%= typeof value !=  "undefined" ? value: "" %>
+  ></input>
 </div>

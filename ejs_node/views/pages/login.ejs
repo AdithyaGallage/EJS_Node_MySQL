@@ -10,11 +10,11 @@
       <form>
         <!--Email Input-->
         <%- include('../partials/auth/input', {name: "userEmail", type: "email",
-        label: "Email"}); %>
+        label: "Email", value: email}); %>
 
         <!--Password Input-->
         <%- include('../partials/auth/input', {name: "userPassword", type:
-        "password", label: "Password"}); %>
+        "password", label: "Password", value: password}); %>
 
         <!--Submit button-->
         <%- include('../partials/auth/button', {text: "Log in"}); %>

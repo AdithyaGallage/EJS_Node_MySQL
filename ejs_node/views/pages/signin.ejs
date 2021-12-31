@@ -9,18 +9,18 @@
       <%- include('../partials/auth/header', {text:"Sign in"}); %>
 
       <!--enctype="application/x-www-form-urlencoded". This is the default-->
-      <form action="/sign-in" method="POST" >
+      <form action="/sign-in" method="POST">
         <!--UserName Input-->
         <%- include('../partials/auth/input', {name: "userName", type: "text",
-        label: "UserName"}); %>
+        label: "UserName", value: name}); %>
 
         <!--Email Input-->
         <%- include('../partials/auth/input', {name: "userEmail", type: "email",
-        label: "Email"}); %>
+        label: "Email", value: email}); %>
 
         <!--Password Input-->
         <%- include('../partials/auth/input', {name: "userPassword", type:
-        "password", label: "Password"}); %>
+        "password", label: "Password", value: password}); %>
 
         <!--Submit button-->
         <%- include('../partials/auth/button', {text: "Sign Up"}); %>

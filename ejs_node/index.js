@@ -51,12 +51,12 @@ app.get("/about", function (req, res) {
 
 // login page
 app.get("/login", function (req, res) {
-  res.render("pages/login");
+  res.render("pages/login", {email: "", password: ""});
 });
 
 // signin page
 app.get("/sign-in", function (req, res) {
-  res.render("pages/signin");
+  res.render("pages/signin", {name: "", email: "", password: ""});
 });
 
 // registering a user
